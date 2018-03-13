@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/project/5.0.1/project",
+    "id": "https://schema.humancellatlas.org/type/project/5.1.0/project",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -56,6 +56,12 @@
             "items": {
                 "$ref": "https://schema.humancellatlas.org/module/project/5.0.1/publication"
             }
+        },
+        "project_grant_name": {
+            "description": "The name of the grant funding the project",
+            "type": "string",
+            "example": "NSF Grant 0903629",
+            "user_friendly": "Project grant name"
         },
         "insdc_project": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
